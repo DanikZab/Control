@@ -5,33 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЧУДО НАДИП - Школа программирования и дизайна</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>ЧУДО НАДИП</h1>
-            <p>Школа программирования и дизайна</p>
+            <h1 class="animate__animated animate__fadeInDown">ЧУДО НАДИП</h1>
+            <p class="animate__animated animate__fadeInUp">Школа программирования и дизайна</p>
         </div>
     </header>
-
-    <section id="about" class="container">
-        <h2>О нас</h2>
-        <p>Мы – команда профессионалов, увлеченных миром разработки и дизайна. В ЧУДО НАДИП мы помогаем раскрыть ваш потенциал, научить создавать современные и красивые веб-сайты, приложения и графические работы.</p>
+    <nav>
+    <div class="container">
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#examples">Примеры</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+    <section id="about" class="container animate__animated animate__fadeIn">
+        <h2 class="animate__animated animate__fadeInUp">О нас</h2>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Мы – команда профессионалов, увлеченных миром разработки и дизайна. В ЧУДО НАДИП мы помогаем раскрыть ваш потенциал, научить создавать современные и красивые веб-сайты, приложения и графические работы.</p>
          <div class="card-container">
-            <div class="card">
+            <div class="card animate__animated animate__fadeInUp animate__delay-1s">
               <img src="" alt="Разработка сайтов">
               <h3>Разработка сайтов</h3>
                 <p>Изучите HTML, CSS, JavaScript, фреймворки и многое другое. Станьте мастером веб-разработки.</p>
             </div>
-               <div class="card">
+               <div class="card animate__animated animate__fadeInUp animate__delay-1s">
                   <img src="" alt="Веб-дизайн">
                   <h3>Веб-дизайн</h3>
                   <p>Узнайте, как создавать красивые и функциональные интерфейсы, используя принципы UX/UI дизайна.</p>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__fadeInUp animate__delay-1s">
                   <img src="" alt="Графический дизайн">
                   <h3>Графический дизайн</h3>
                   <p>Научитесь создавать логотипы, иллюстрации и другие визуальные материалы. Раскройте свой творческий потенциал.</p>
@@ -39,28 +48,28 @@
            </div>
     </section>
 
-    <section id="examples" class="container">
-        <h2>Примеры работ</h2>
+    <section id="examples" class="container animate__animated animate__fadeIn">
+        <h2 class="animate__animated animate__fadeInUp">Примеры работ</h2>
         <div class="gallery">
-            <a href="#" class="gallery-item">
+            <a href="#" class="gallery-item animate__animated animate__fadeInUp">
                 <img src="" alt="Веб-сайт 1">
                <div class="overlay">
                  <p>Веб-сайт 1</p>
                 </div>
             </a>
-            <a href="#" class="gallery-item">
+            <a href="#" class="gallery-item animate__animated animate__fadeInUp animate__delay-1s">
                 <img src="" alt="Веб-сайт 2">
                   <div class="overlay">
                      <p>Веб-сайт 2</p>
                    </div>
             </a>
-           <a href="#" class="gallery-item">
+           <a href="#" class="gallery-item animate__animated animate__fadeInUp animate__delay-2s">
                 <img src="" alt="Приложение 1">
                    <div class="overlay">
                      <p>Приложение 1</p>
                   </div>
            </a>
-              <a href="#" class="gallery-item">
+              <a href="#" class="gallery-item animate__animated animate__fadeInUp animate__delay-3s">
                 <img src="" alt="Графика 1">
                 <div class="overlay">
                      <p>Графика 1</p>
@@ -69,23 +78,23 @@
         </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2>Контакты</h2>
-      <p>Свяжитесь с нами, чтобы узнать больше и записаться на курсы.</p>
+    <section id="contact" class="container animate__animated animate__fadeIn">
+      <h2 class="animate__animated animate__fadeInUp">Контакты</h2>
+      <p class="animate__animated animate__fadeInUp animate__delay-1s">Свяжитесь с нами, чтобы узнать больше и записаться на курсы.</p>
         <div class="contact-container">
-           <div class="contact-item">
+           <div class="contact-item animate__animated animate__fadeInUp animate__delay-1s">
             <i class="fas fa-phone"></i>
             <p>+7 (XXX) XXX-XX-XX</p>
           </div>
-          <div class="contact-item">
+          <div class="contact-item animate__animated animate__fadeInUp animate__delay-1s">
             <i class="fas fa-envelope"></i>
              <p>info@chudo-nadip.ru</p>
           </div>
-          <div class="contact-item">
+          <div class="contact-item animate__animated animate__fadeInUp animate__delay-1s">
             <i class="fas fa-map-marker-alt"></i>
             <p>г. Москва, ул. Пушкина, д. 10</p>
           </div>
-          <div class="contact-item">
+          <div class="contact-item animate__animated animate__fadeInUp animate__delay-1s">
              <a href="https://t.me/your_telegram" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
          </div>
         </div>
@@ -96,7 +105,7 @@
           <p>© 2023 ЧУДО НАДИП. Все права защищены.</p>
         </div>
     </footer>
-
-     <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
