@@ -441,3 +441,46 @@ header p {
     font-size: 3em;
   }
 }
+.container {
+  position: relative; /* Очень важно! */
+}
+
+.hologram-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* Добавил прозрачный фон */
+}
+
+.hologram {
+  display: inline-block;
+  position: relative;
+}
+
+.hologram-text {
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
+  white-space: nowrap;
+  animation: hologramText 3s linear infinite;
+}
+
+@keyframes hologramText {
+  0% {
+    text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(107, 180, 255, 0.9), 0 0 40px rgba(107, 180, 255, 0.6), 0 0 60px rgba(107, 180, 255, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
+  }
+}
+/* Добавьте стили для .hologram:before, но скопируйте их из предыдущих ответов */
+
