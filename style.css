@@ -368,4 +368,69 @@ footer {
   margin-bottom: 10px;
     font-size: 1em;
 }
+.hologram-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Чтобы голограмма была поверх фона */
+}
+
+.hologram {
+    display: inline-block;
+    position: relative;
+}
+.hologram:before{
+    content:"";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right:-3px;
+    bottom: -3px;
+    border:1px solid white;
+    opacity: 0.2;
+    animation: hologramBorder 2s linear infinite;
+}
+@keyframes hologramBorder {
+  0%{
+        transform: skewX(5deg);
+        opacity: 0.2;
+  }
+    50%{
+          transform: skewX(-5deg);
+           opacity: 0.5;
+    }
+    100%{
+        transform: skewX(5deg);
+          opacity: 0.2;
+    }
+}
+.hologram-text {
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
+    white-space: nowrap; /* Запрещает перенос строки */
+    animation: hologramText 3s linear infinite;
+
+}
+@keyframes hologramText {
+  0%{
+       text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
+
+  }
+  50%{
+      text-shadow: 0 0 20px rgba(107, 180, 255, 0.9), 0 0 40px rgba(107, 180, 255, 0.6), 0 0 60px rgba(107, 180, 255, 0.4);
+  }
+    100%{
+         text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
+    }
+}
+
+/*Адаптивность */
+@media (max-width: 768px) {
+  .hologram-text {
+    font-size: 3em;
+  }
+}
 
