@@ -373,15 +373,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Чтобы голограмма была поверх фона */
-}
-
-.hologram-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Чтобы голограмма была поверх фона */
+    z-index: 1; /* Чтобы голограмма была под текстом */
 }
 
 .hologram {
@@ -414,7 +406,7 @@ footer {
     }
 }
 .hologram-text {
-    font-size: 5em;
+    font-size: 4em; /* Уменьшаем размер текста */
     letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
@@ -434,7 +426,15 @@ footer {
          text-shadow: 0 0 10px rgba(107, 180, 255, 0.8), 0 0 30px rgba(107, 180, 255, 0.5), 0 0 50px rgba(107, 180, 255, 0.3);
     }
 }
+header h1 {
+    position: relative; /* Необходимо для z-index */
+    z-index: 2; /* Чтобы заголовок был над голограммой */
+}
 
+header p {
+     position: relative; /* Необходимо для z-index */
+    z-index: 2; /* Чтобы заголовок был над голограммой */
+}
 /*Адаптивность */
 @media (max-width: 768px) {
   .hologram-text {
