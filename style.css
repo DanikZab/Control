@@ -291,3 +291,55 @@ footer {
 .equipment-item p {
   font-size: 1.1em;
 }
+/* ... (ваш существующий CSS) ... */
+
+/* Адаптивность (необходимо добавить в вашу стилистику) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px; /* Уменьшаем отступы для мобильных устройств */
+  }
+  header {
+    padding: 30px 0; /* Уменьшаем отступы в хедере */
+  }
+  header h1 {
+    font-size: 2.5em; /* Уменьшаем размер заголовка */
+  }
+   section h2 {
+       font-size: 2.2em; /* Уменьшаем размер заголовков секций */
+   }
+   .card-container {
+     flex-direction: column; /* Устанавливаем вертикальное расположение карточек */
+     align-items: center;
+   }
+  .card {
+    width: 90%; /* Карточки занимают всю ширину экрана */
+  }
+  .gallery {
+      grid-template-columns: 1fr; /* Одиночный столбец на мобильных устройствах */
+  }
+  .gallery-item {
+      width: 90%;
+      display: block; /* Блок для корректного отображения */
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-item {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .contact-item i {
+  font-size: 1.1em;
+}
+
+  .equipment-item{
+      width: 90%;
+  }
+
+  .equipment-gallery{
+      grid-template-columns: 1fr; /* Один столбец для элементов галереи */
+  }
+}
